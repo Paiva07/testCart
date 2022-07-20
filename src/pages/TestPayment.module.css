@@ -1,0 +1,25 @@
+.containerFullBox {
+  background-color: #eee;
+  padding-top: 10px;
+  height: 720px;
+  margin: auto;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #999;
+  font-weight: bold;
+  padding: 0 0 5px 16px;
+}
+
+.containerItensLits {
+  width: 354px;
+  height: 279px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: auto;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
+  padding-top: 12px;
+  margin-bottom: 20px;
+}

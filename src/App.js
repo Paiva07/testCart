@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { GlobalStorage } from './GlobalContext';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import TestCart from './pages/TestCart';
+import { TestPayment } from './pages/TestPayment';
+import { TestSucess } from './pages/TestSucess';
+import './styles.css';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStorage>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<TestCart />} />
+            <Route path="/payment" element={<TestPayment />} />
+            <Route path="/sucess" element={<TestSucess />} />
+          </Routes>
+        </BrowserRouter>
+      </GlobalStorage>
+    </>
   );
-}
-
-export default App;
+};

@@ -1,0 +1,26 @@
+.headerContainer{
+  width: 370px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+.headerContainer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 16px ;
+}
+
+.headerContainer ul li{
+ list-style: none;
+ font-size: 13px;
+ line-height: 16px;
+ color: #ccc;
+ font-weight: bold;
+
+}
+/* .headerContainer ul li:first-child{
+  color: #FF7800
+
+} */
