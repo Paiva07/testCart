@@ -8,6 +8,7 @@ import { ContainerConsumerInformation } from '../components/ContainerConsumerInf
 
 export const TestSucess = () => {
   const dados = window.localStorage.getItem('dados');
+  const teste = 'teste';
   return (
     <div>
       <Header />
